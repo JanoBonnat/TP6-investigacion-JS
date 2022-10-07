@@ -36,6 +36,59 @@
     <p>Desde el body</p>
     <p>Desde el head</p>
     <h1>3) ¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?</h1>
+    <p>Las variables en JS se declaran con var, let o const. Para asignar una variable con const
+         se le debe de dar un valor en la misma
+         linea de codigo en la que se declara.
+    </p>
+    <p>Existen 8 tipos de datos:</p>
+    <ul>
+        <li>Undefined: variable que no se ha declarado o asignado valor</li>
+        <li>Booleano: representa un valor lógico a la variable, true or false.</li>
+        <li>Number: valores numéricos</li>
+        <li>String: son cadenas de caracteres. Deben ser representadas entre comillas simples, dobles
+            o francesas 
+        </li>
+        <li>BigInt: valores numeros muy grandes para ser utlizados con tipo de dato number</li>
+        <li>Symbol: utilizado para dar valores únicos e inmutables</li>
+        <li>Null: falta intencional de valor en una variable</li>
+        <li>Object: utilizado para crear colecciones de datos y entidades más complejas.</li>
+        <li>Function: Objetos capaces de ser ejecutables</li>
+    </ul>
+    <p>Las expresiones regulares en JS son caracteres en cadena que forman un patrón de busqueda.
+        Existen dos formas de crear expresiones regulares en JS, usando notación literal 
+        (patron entre barras), que proporcionan la compilación de la expresión regular cuando se 
+        carga el script. O con el constructor de objeto (RegExp), que proporciona una compilación 
+        en tiempo de ejecución de la expresión regular.
+        
+        Otro componente importante 
+        para las expresiones regulares son las banderas: indicadores que habilitan funciones en la
+        definición del patrón de la expresión regular. Por ejemplo: 
+        <ul>
+            <li>Letra g: hace una búsqueda global en toda la cadena de caracteres a analizar</li>
+            <li>Letra i: no distingue entre mayúsculas y minúsculas al hacer la búsqueda</li>
+        </ul>
+        <img src="imagenes/ER.jpeg"/>
+    </p>
+
+
+
+
+    <!--
+    <script>
+        var num1;
+        let nombre;
+        let turno;
+        const apellido = "Bonnat";/*commilas dobles*/
+
+        num1=89;
+        nombre='Jano';/*comillas simples*/
+        turno='vespertino';/*comillas francesas*/
+
+    </script>-->
+    <script>
+        let ejemplo = /ab+c/g;
+        let ejemplo2 = RegExp('ab+c');
+    </script>
 </body>
 </html>
 
