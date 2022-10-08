@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css"> 
     <title>TP6 investigación JS</title>
 </head>
 <body>
-    <h1>1) ¿Qué versiones de JavaScript hay en el mercado?</h1>
+    <div class="cabecera">
+        <img src="imagenes/logoEpet.jpeg" height="100px" width="100px"/>
+        <div class="nombreCarrera">
+            <h3>Bonnat Jano - 5°1</h3>
+            <h3>Carrera Técnico Programador</h3>
+        </div>
+    </div>
+
+    <h1 class="titulo">Trabajo práctico de investigación de JS</h1>
+    <div class="cuerpo">
+    <h1 class="subtitulo">1) ¿Qué versiones de JavaScript hay en el mercado?</h1>
     <H2>versiones de JavaScript en el mercado:</H2>
     <ul>
         <li>1997: ES1</li>
@@ -24,18 +35,23 @@
         <li>2020: ES11</li>
         <li>2021: ES12</li>
     </ul>
-    <h1>2) ¿Cómo se integra JavaScript a HTML?</h1>
+    <h1 class="subtitulo">2) ¿Cómo se integra JavaScript a HTML?</h1>
+
     <h2>Existen dos formas de integrar JS a HTML:</h2>
     <p>Forma 1: vinculando el html con el archivo JS</p>
-    <img src="imagenes/FORMA1.JPG"/>
+    <img src="imagenes/FORMA1.JPG" width="395px"/>
     <img src="imagenes/FORMA1B.JPG"/>
-    <p>Desde el body</p>
-    <p>Desde el head</p>
+    <div class="BANDH">
+        <p>Desde el body</p>
+        <p>Desde el head</p>
+    </div>
     <p>Forma 2: insertando contenido de JS dentro del html</p>
     <img src="imagenes/FORMA2.jpeg"/>
-    <img src="imagenes/FORMA2B.jpeg"/>
-    <p>Desde el body</p>
-    <p>Desde el head</p>
+    <img src="imagenes/FORMA2B.jpeg" height="155px"/>
+    <div class="BANDH2">
+        <p>Desde el body</p>
+        <p>Desde el head</p>
+    </div>
     <h1>3) ¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?</h1>
     <p>Las variables en JS se declaran con var, let o const. Para asignar una variable con const
          se le debe de dar un valor en la misma
@@ -68,18 +84,23 @@
             <li>Letra g: hace una búsqueda global en toda la cadena de caracteres a analizar</li>
             <li>Letra i: no distingue entre mayúsculas y minúsculas al hacer la búsqueda</li>
         </ul>
-        <img src="imagenes/ER.jpeg"/>
+        <img src="imagenes/ER.jpeg" class="imagen"/>
     </p>
     <h1>4) ¿Cómo son todas las formas de declaración de funciones en JS?</h1>
 
     <p>Diferentes formas de clarar funciones en JS:</p>
     <ul>
         <li>Function declaration: más común de todas, function seguido del nombre de la misma</li>
-        <img src="imagenes/F1.jpeg"/>
+    </ul>
+        <img src="imagenes/F1.jpeg" class="imagen"/>
+    <ul>
         <li>Function expression: función sin nombre y declarada dentro de una variable.</li>
-        <img src="imagenes/F2.jpeg"/>
+    </ul>
+        <img src="imagenes/F2.jpeg" class="imagen"/>
+    <ul>
         <li>Reemplazando la palabra function</li>
-        <img src="imagenes/F4.jpeg"/>
+    </ul>
+        <img src="imagenes/F4.jpeg" class="imagen"/>
     </ul>
 
     <h1>5) ¿Cuáles son los operadores y conversión entre tipos?</h1>
@@ -93,10 +114,10 @@
     <p>
         La conversión entre tipos de datos es, en pocas palabras, el cambio automático del valor
         de un dato a su tipo correcto. Estas conversiones se utilizan, por ejemplo, en divisiones.
-        <img src="imagenes/Conversion.jpeg"/>
     </p>
+    <img src="imagenes/Conversion.jpeg"/>
 
-    <h1>6) ¿Cuáles son las estructura de control de JS?</h1>
+    <h1 class="subtitulo">6) ¿Cuáles son las estructura de control de JS?</h1>
     <p>Dejando de lado las típicas estructuras de control como el if con else, while, for, etc. 
         Voy a mostrar otra forma en la que se puede utilizar un if y el for. El primero es un if 
         de una sola línea, que tiene la desventaja de mostrar un solo valor. Si tenemos la idea 
@@ -104,20 +125,19 @@
         este if. El segundo es un for...of, que ejecuta un bloque de código para cada elemento de un 
         objeto iterable, como lo son: String , Array, entre otros.
     </p>
-    <img src="imagenes/1LineIf.jpeg"/>
+    <img src="imagenes/1LineIf.jpeg"/ height="135px" width="300px">
     <img src="imagenes/FOR...if.jpeg"/>
 
-    <h1>7) ¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?</h1>
+    <h1 class="subtitulo">7) ¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?</h1>
 
     <p>El elemnto DOM (Document Object Model) representa todos los elementos que pueden ser encontrados
         en nuestra página web, ya sea encabezado, título, pie de página, botones, imagenes, etc. El DOM 
         puede ser manipulado desde JS, seleccionado los elementos HTml (ID, class, etiqueta). Ejemplo
         de cómo podemos modificar un elemento html mediante el elemento DOM.
-
-        <img src="imagenes/DOM.jpeg"/>
     </p>
+    <img src="imagenes/DOM.jpeg"/>
 
-    <h1>8) ¿Qué función tiene en JS el Object Map?</h1>
+    <h1 class="subtitulo">8) ¿Qué función tiene en JS el Object Map?</h1>
     <p>El object.map es un método incorporado con el que podemos repetir un arreglo y modificar sus 
         elementos utilizando una función callback, la cual se ejecuta en cada uno de los elementos 
         del arreglo
@@ -125,7 +145,7 @@
 
     <img src="imagenes/map.jpeg"/>
 
-    <h1>9) ¿Cuáles son todos los eventos que trabaja JS?</h1>
+    <h1 class="subtitulo">9) ¿Cuáles son todos los eventos que trabaja JS?</h1>
 
     <p>El evento en JS es el que permite la interación que tiene el usuario con la página web. 
         Cada que uno toca un botón o tecla específica se produce un evento. JS trabaja con 11 tipos
@@ -136,35 +156,15 @@
         con video y audio, Relacionados con la conexión a internet.
     </p>
 
-    <h1>10) Con toda la investigación que generaron deben de generar un formulario que realice las
-        siguientes funciones. Que obtenga los datos del input, que verifique los datos que se 
-        ingresan en el input, que el formulario presente una calculo de sumatoria para validar ¿Qué
-        no sos un robot”?.
+    <h1 class="subtitulo">10) Con toda la investigación que generaron deben de generar un formulario que realice las
+        siguientes funciones...
     </h1>
     <p>Primero, para tomar los datos del formulario, en caso de haber usado un ID para vincular, 
         utilizamos el método getElementById. Luego, para verificar que los datos se hallan ingresado
         correctamente, se utilizan las expresiones regulares. 
 
     </p>
-
-    
-    <!--
-    <script>
-        var num1;
-        let nombre;
-        let turno;
-        const apellido = "Bonnat";/*commilas dobles*/
-
-        num1=89;
-        nombre='Jano';/*comillas simples*/
-        turno='vespertino';/*comillas francesas*/
-
-    </script>
-    <script>
-        let ejemplo = /ab+c/g;
-        let ejemplo2 = RegExp('ab+c');
-    </script>-->
-
+    </div>
 </body>
 </html>
 
